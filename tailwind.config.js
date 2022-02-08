@@ -5,7 +5,20 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['pt_sansregular'],
+        'bold': ['pt_sansbold']
+      },
+      colors: {
+        darkBlue: '#01202C',
+        turquoise: '#4DB0B3',
+        pomegranate: '#C60011'
+      }
+    },
+    zIndex: {
+      '9': '9'
+    }
   },
   plugins: [],
 }
