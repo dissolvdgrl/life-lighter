@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        ultrawide: '0.35em'
+      },
       fontFamily: {
         'sans': ['pt_sansregular'],
         'bold': ['pt_sansbold']
@@ -18,7 +21,7 @@ module.exports = {
     },
     zIndex: {
       '9': '9'
-    }
+    },
   },
   plugins: [],
 }

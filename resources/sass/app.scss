@@ -35,3 +35,29 @@ nav {
         @apply absolute -bottom-2 h-1 bg-darkBlue;
     }
 }
+
+.header-img {
+    clip-path: url(#clipContainer);
+}
+
+.button {
+    @apply inline-block border uppercase rounded-full font-sans font-bold tracking-ultrawide px-4 py-2 transition-all duration-150;
+
+    &:hover, &:focus {
+        @apply text-white;
+    }
+}
+
+.button-solid {
+    @apply text-white;
+
+    &:hover, &:focus {
+        @apply bg-transparent;
+    }
+}
+
+footer {
+    background-image: url('/images/footer-bg.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}
