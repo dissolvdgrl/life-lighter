@@ -22,18 +22,18 @@
 }
 
 nav {
-    a {
-        @apply uppercase text-darkBlue relative flex flex-col ;
-    }
+    .nav-link {
+        @apply uppercase text-darkBlue relative flex flex-col text-2xl mb-8;
 
-    a::after {
-        @apply inline-block w-full h-0 transition-all ease-linear duration-300;
-        content: "";
-    }
+        &::after {
+            @apply inline-block w-full h-0 absolute -bottom-2 transition-all ease-linear duration-300;
+            content: "";
+        }
 
-    a:hover::after, a:focus::after {
-        @apply absolute -bottom-2 h-1 bg-darkBlue;
-    }
+        &:hover::after, &:focus::after {
+            @apply h-1 bg-darkBlue;
+        } 
+    }  
 }
 
 .header-img {
@@ -56,8 +56,32 @@ nav {
     }
 }
 
-footer {
+.vetplant-bg {
     background-image: url('/images/footer-bg.jpg');
     background-size: cover;
     background-position: bottom center;
 }
+
+#navToggle {
+    
+    > div {
+        @apply bg-darkBlue rounded-full p-0.5 mb-1 w-8 origin-center transition-all duration-150;
+    }
+}
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+  }
+  
+  .slide-fade-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+  
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    opacity: 0;
+  }
+
+  .divider {
+    @apply bg-pomegranate mx-auto w-32 h-0.5 mt-4;
+  }

@@ -15,17 +15,17 @@
         <nav id="nav" class="container mx-auto flex justify-between bg-gradient-to-b from-white to-transparent sticky top-0" style="z-index:10;">
             <div class="p-8 flex justify-between w-full text-darkBlue">
                 <img src="{{ asset('images/Logo.png') }}" alt="Life Lighter" class="w-24">
-                <div id="navToggle" class="cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                <menu-toggle @toggle="toggleMenu"></menu-toggle>
+            </div>
+            <Transition name="slide-fade">
+                <div v-if="showMenu" class="flex flex-col items-center absolute h-screen w-full bg-white justify-center transition-all duration-150">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" target="_blank" class="button button-solid bg-pomegranate hover:text-pomegranate focus:text-pomegranate">Book Now</a>
                 </div>
-            </div>
-            <div class="hidden flex-col items-center absolute w-full bg-white">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#" target="_blank" class="button button-solid">Book Now</a>
-            </div>
+            </Transition>
         </nav>
         
         <header class="relative">
@@ -40,7 +40,9 @@
         </header>
     </div>
 
-    <footer class="p-16">
+    @yield('content')
+
+    <footer class="vetplant-bg p-16">
         <div class="grid grid-cols-1 gap-8 container mx-auto w-5/6">
             <div>
                 <p class="uppercase text-darkBlue font-bold tracking-ultrawide mb-8 text-sm">Stay Connected</p>

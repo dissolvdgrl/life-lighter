@@ -9,6 +9,9 @@ module.exports = {
       letterSpacing: {
         ultrawide: '0.35em'
       },
+      zIndex: {
+        '9': '9'
+      },
       fontFamily: {
         'sans': ['pt_sansregular'],
         'bold': ['pt_sansbold']
@@ -18,10 +21,7 @@ module.exports = {
         turquoise: '#4DB0B3',
         pomegranate: '#C60011'
       }
-    },
-    zIndex: {
-      '9': '9'
-    },
+    }
   },
   plugins: [],
 }
