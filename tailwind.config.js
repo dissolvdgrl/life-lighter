@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['pt_sansregular'],
-        'bold': ['pt_sansbold']
+        'bold': ['pt_sansbold'],
+        'cursive': ['Sacramento', 'cursive']
       },
       colors: {
         darkBlue: '#01202C',

@@ -71,17 +71,22 @@ nav {
 
 .slide-fade-enter-active {
     transition: all 0.3s ease-out;
-  }
+}
   
-  .slide-fade-leave-active {
+.slide-fade-leave-active {
     transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-  }
+}
   
-  .slide-fade-enter-from,
-  .slide-fade-leave-to {
+.slide-fade-enter-from, .slide-fade-leave-to {
     opacity: 0;
-  }
+}
 
-  .divider {
+.divider {
     @apply bg-pomegranate mx-auto w-32 h-0.5 mt-4;
-  }
+}
+
+.about-me {
+    background-image: url('/images/about-me-bg.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}

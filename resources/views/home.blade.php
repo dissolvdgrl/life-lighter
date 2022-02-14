@@ -14,7 +14,7 @@
         <div class="grid grid-cols-1 gap-8 py-32 w-5/6 mx-auto">
             <div class="mb-6">
                 <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">DO ANY OF THESE STATEMENTS</p>
-                <p class="text-pomegranate text-3xl text-center">APPLY TO YOU?</p>
+                <p class="text-pomegranate text-5xl text-center font-cursive leading-3">apply to you?</p>
             </div>
             <div class="relative">
                 <ul class="text-center">
@@ -28,65 +28,96 @@
             </div>
         </div>
         <div class="grid grid-cols-1 bg-darkBlue bg-blend-multiply py-16">
-            <div class="relative">
+            <div class="relative mx-auto">
                 <img src="{{ asset('/images/woman1.jpg') }}" alt="">
             </div>
             <div class="flex flex-col items-center">
                 <p class="text-5xl text-white text-center">You’ve come to</p>
-                <p class="text-5xl text-pomegranate text-center mb-8">the right place!</p>
+                <p class="text-6xl text-pomegranate text-center mb-24 font-cursive leading-3">the right place!</p>
                 <a href="javacsript:void()" class="button text-turquoise border-turquoise hover:bg-turquoise focus:bg-turquiose">BOOK NOW</a>
             </div>
         </div>
     </section>
 
-    <section class="relative py-32 w-5/6 mx-auto grid grid-cols-1 gap-8">
+    <section class="relative py-24 w-5/6 mx-auto grid grid-cols-1 gap-8">
         <div>
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl mb-8">How we can help...</p>
             <p class="font-sans text-darkBlue mb-8">At Life Lighter we partner with you to get to the root of your health challenges by combining evidence-based, functional nutrition and lifestyle medicine with the insightful, thought provoking and creative process of coaching to inspire you to maximize your well-being and potential.</p>
             <p class="font-sans text-darkBlue">This enables you, the client, to gain clarity on the challenges at hand and to move forward with achievable goals and lasting solutions.</p>
         </div>
         <div>
-            <img src="{{ asset('/images/plant_2.svg') }}" alt="" class="w-72 mx-auto">
+            <img src="{{ asset('/images/plant_2.svg') }}" alt="" class="w-36 mx-auto">
         </div>
     </section>
 
     <section class="grid grid-cols-1 gap-8 w-5/6 mx-auto">
         <div>
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">Your gain and what</p>
-            <p class="text-turquoise text-3xl text-center">you can experience</p>
+            <p class="text-turquoise text-center font-cursive leading-3 text-6xl">you can experience</p>
         </div>
         <div class="bg-turquoise flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">freedom</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">freedom</p>
             <p class="text-white font-sans tracking-ultrawide text-center">in being</p>
         </div>
         <div class="bg-pomegranate flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">relief - </p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">relief - </p>
             <p class="text-white font-sans tracking-ultrawide text-center">feeling lighter, hopeful</p>
         </div>
         <div class="bg-darkBlue flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">health and wellbeing -</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">health and wellbeing -</p>
             <p class="text-white font-sans tracking-ultrawide">where you are now, on your way to where you are going</p>
         </div>
         <div class="bg-slate-600 flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">practical guidance on</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">practical guidance on</p>
             <p class="text-white font-sans tracking-ultrawide text-center">food intake individualized to your needs and circumstances</p>
         </div>
         <div class="bg-pomegranate flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">confidence in</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">confidence in</p>
             <p class="text-white font-sans tracking-ultrawide text-center">reaching your goals</p>
         </div>
         <div class="bg-turquoise flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">greater understanding on how</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">greater understanding on how</p>
             <p class="text-white font-sans tracking-ultrawide text-center">your thoughts, will and emotions impact your state of wellbeing</p>
         </div>
         <div class="bg-slate-600 flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">growth in your relationships -</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">growth in your relationships -</p>
             <p class="text-white font-sans tracking-ultrawide text-center">with self, food and others</p>
         </div>
         <div class="bg-darkBlue flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center">understanding of the</p>
+            <p class="text-white text-center font-cursive text-4xl leading-3">understanding of the</p>
             <p class="text-white font-sans tracking-ultrawide text-center">impact of lifestyle components</p>
         </div>
+    </section>
+
+    <section class="relative py-32 w-5/6 mx-auto flex flex-col items-center">
+        <p class="text-turquoise tracking-widest font-sans text-2xl text-center">We invite you to take the first step towards a more</p>
+        <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">fulfilled, nourished, and healthier life by contacting us today.</p>
+        <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Book now</a>
+    </section>
+
+    <section class="about-me py-16">
+        <div class="container mx-auto w-5/6 grid grid-cols-1 gap-8">
+            <div>
+                <p class="text-turquoise text-center font-cursive text-5xl leading-3">meet</p>
+                <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">Careen</p>  
+                <div class="divider"></div>              
+            </div>
+            <div class="w-full h-64 bg-slate-200">
+                <img src="" alt="foto" class="">
+            </div>
+            <div class="flex flex-col items-center">
+                <p class="font-bold uppercase text-2xl text-darkBlue">Hi. I am Careen Visagie.</p>
+                <p class="font-sans text-darkBlue text-center mb-6">I am here to help you regain and improve your health and wellbeing by addressing the root causes of your challenges.</p>
+                <p class="font-sans text-darkBlue text-center mb-6">I help you on your journey to live a lighter, nourished life – able to fulfill  your purpose, passions and potential.</p>
+                <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
+        <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Want more information on how I can help you?</p>
+        <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">Book a “Hello Session” now</p>
+        <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Get started</a>
     </section>
     
 @endsection
