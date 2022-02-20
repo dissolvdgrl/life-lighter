@@ -23,7 +23,7 @@
 
 nav {
     .nav-link {
-        @apply uppercase text-darkBlue relative flex flex-col text-2xl mb-8;
+        @apply uppercase text-darkBlue relative flex flex-col text-2xl mb-8 md:text-base md:mb-0;
 
         &::after {
             @apply inline-block w-full h-0 absolute -bottom-2 transition-all ease-linear duration-300;
@@ -83,6 +83,10 @@ nav {
 
 .divider {
     @apply bg-pomegranate mx-auto w-32 h-0.5 mt-4;
+}
+
+.divider-left {
+    @apply mx-0;
 }
 
 .about-me {

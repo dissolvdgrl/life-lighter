@@ -7,10 +7,13 @@ module.exports = {
   theme: {
     extend: {
       letterSpacing: {
-        ultrawide: '0.35em'
+        ultrawide: '0.25em'
       },
       zIndex: {
         '9': '9'
+      },
+      lineHeight: {
+        '2': '0.5'
       },
       fontFamily: {
         'sans': ['pt_sansregular'],
