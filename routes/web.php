@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'home');
+Route::controller(PagesController::class)->group(function () {
+    Route::get('/posts', 'posts');
+});
