@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function posts() {
-        $posts = Post::select('title')->where('published', 1)->get();
+        $posts = Post::where('published', 1)->get();
         return view('posts.index', compact('posts'));
     }
 }

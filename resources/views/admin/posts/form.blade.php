@@ -55,8 +55,7 @@
 
     @formField('medias', [
         'name' => 'featured_image',
-        'label' => 'Featured Image',
-        'required' => true
+        'label' => 'Featured Image'
     ])
     
 @stop

@@ -22506,6 +22506,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     MenuToggle: _MenuToggle_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  setup: function setup() {
+    var setActiveLink = function setActiveLink(routeName) {
+      var currentRoute = window.location.pathname.replace('/', '');
+      return currentRoute === routeName ? 'font-bold' : '';
+    };
+
+    return {
+      setActiveLink: setActiveLink
+    };
+  },
+  mounted: function mounted() {
+    this.setActiveLink();
   }
 });
 
@@ -22640,41 +22653,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#",
-  "class": "nav-link"
-}, "Home", -1
-/* HOISTED */
-);
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#",
-  "class": "nav-link"
-}, "About", -1
-/* HOISTED */
-);
-
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#",
-  "class": "nav-link"
-}, "Services", -1
-/* HOISTED */
-);
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#",
-  "class": "nav-link"
-}, "Blog", -1
-/* HOISTED */
-);
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "#",
   target: "_blank",
   "class": "button button-solid bg-pomegranate hover:text-pomegranate hover:border-pomegranate focus:text-pomegranate focus:border-pomegranate"
 }, "Book Now", -1
 /* HOISTED */
 );
 
-var _hoisted_6 = [_hoisted_1, _hoisted_2, _hoisted_3, _hoisted_4, _hoisted_5];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_menu_toggle = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("menu-toggle");
 
@@ -22688,7 +22672,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
         "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.$parent.showMenu ? 'flex flex-col items-center absolute left-0 top-0 h-screen w-full bg-white' : 'hidden md:flex', 'justify-center transition-all duration-150 md:relative md:flex-row md:w-3/4 md:justify-evenly lg:w-2/5 items-center'])
-      }, _hoisted_6, 2
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+        href: "/",
+        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$setup.setActiveLink(''), 'nav-link'])
+      }, "Home", 2
+      /* CLASS */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+        href: "/about",
+        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$setup.setActiveLink('about'), 'nav-link'])
+      }, "About", 2
+      /* CLASS */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+        href: "/services",
+        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$setup.setActiveLink('services'), 'nav-link'])
+      }, "Services", 2
+      /* CLASS */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+        href: "/blog",
+        "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$setup.setActiveLink('blog'), 'nav-link'])
+      }, "Blog", 2
+      /* CLASS */
+      ), _hoisted_1], 2
       /* CLASS */
       )];
     }),

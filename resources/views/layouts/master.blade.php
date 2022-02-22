@@ -8,10 +8,6 @@
     <meta name="description" content="Life and wellness coaching in Pretoria, South Africa">
     <title>@yield('page-title') - {{ config('app.name') }} </title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -29,8 +25,6 @@
         @yield('content')
 
         <footer class="vetplant-bg p-16">
-            <example-component></example-component>
-            <testing-component></testing-component>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto w-5/6">
                 <div>
                     <p class="uppercase text-darkBlue font-bold tracking-ultrawide mb-8 text-sm text-center md:text-left">Stay Connected</p>
@@ -63,7 +57,7 @@
                 </div> <!-- col 3 -->
                 <div class="bg-gray-100 p-8 md:col-span-3">
                     <p class="text-gray-500 tracking-widest text-center">“…but I have come to give you everything in abundance, more than you expect – </p>
-                    <p class="text-center text-turquoise font-cursive text-3xl">life in its fullness until you overflow!” </p>
+                    <p class="text-center text-turquoise font-cursive text-2xl uppercase">life in its fullness until you overflow!” </p>
                     <p class="text-xs font-bold text-darkBlue tracking-ultrawide uppercase text-center mt-4">John 10:10 TPT</p>
                 </div> <!-- col 4 -->
             </div>

@@ -18,7 +18,7 @@ module.exports = {
       fontFamily: {
         'sans': ['pt_sansregular'],
         'bold': ['pt_sansbold'],
-        'cursive': ['Sacramento', 'cursive']
+        'cursive': ['shorelines_script_boldregular', 'cursive']
       },
       colors: {
         darkBlue: '#01202C',

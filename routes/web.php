@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home');
 Route::controller(PagesController::class)->group(function () {
-    Route::get('/posts', 'posts');
+    Route::get('/blog', 'posts')->name('blog');
 });

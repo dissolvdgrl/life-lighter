@@ -24,7 +24,6 @@ class CreatePostsTables extends Migration
             $table->timestamp('publish_start_date')->nullable();
             $table->string('author')->default('Careen Visagie');
             $table->string('content')->default('');
-            $table->string('featured_image')->default(''); // put a default image URL here, placeholder or something
         });
 
         Schema::create('post_slugs', function (Blueprint $table) {
