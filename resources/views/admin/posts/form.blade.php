@@ -49,7 +49,6 @@
         "clean",
         ],
         'placeholder' => 'Post content goes here',
-        'maxlength' => 3000,
         'editSource' => false,
     ])
 

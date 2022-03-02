@@ -14,15 +14,38 @@
 @endsection
 
 @section('content')
-    <section class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">
-        <p class="text-turquoise tracking-ultrawide font-sans text-3xl text-center">Thrive with our combination of</p>
-        <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">functional nutrition, coaching and mentoring.</p>
-        <div class="divider"></div>
-        <img src="{{ asset('images/plant_1.svg') }}" alt="" class="absolute left-0 right-0 -z-10 top-12 opacity-20 m-auto">
+    <section class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">   
+        <div class="grid grid-cols-3 gap-16">
+            @foreach ($posts as $post)
+                @if ($loop->first)
+                    <div class="col-span-3 grid grid-cols-2 gap-16">
+                        <img src="{{ $post->images('featured_image', 'thumbnail')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full">
+                        <div class="">
+                            <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
+                            <p class="font-bold text-darkBlue uppercase text-4xl mb-4">{{ $post->title }}</p> 
+                            <p class="mb-4">
+                                <span class="uppercase text-darkBlue font-bold mr-3">TAGS:</span>   
+                                @foreach ($post->tags as $tag)
+                                    <a href="{{ $tag->slug }}" class="bg-turquoise px-2 py-1 text-white rounded-full text-xs mr-2">
+                                        {{ $tag->name }}
+                                    </a>
+                                @endforeach 
+                            </p> 
+                            <p class="mb-4">{{ $post->description }}</p>
+                            
+                            <p class="font-bold text-pomegranate">
+                                <a href="blog/{{ $post->slug }}" class="continue-reading">Continue reading <span>></span></a>
+                            </p> 
+                        </div>
+                    </div>                
+                @else
+                    <div class="shadow-xl p-4">
+                        {{-- <img src="{{ $post->images('featured_image', 'thumbnail')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full"> --}}
+                        <p class="font-bold text-pomegranate">{{ $post->title }}</p>            
+                    </div>                    
+                @endif                
+            @endforeach
+        </div>
+        
     </section>
-
-    @foreach ($posts as $post)
-        <img src="{{ $post->image('featured_image', 'default') }}" alt="">
-        <p class="font-bold text-pomegranate">{{ $post->title }}</p>        
-    @endforeach
 @endsection

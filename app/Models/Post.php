@@ -8,6 +8,9 @@ use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Behaviors\HasPosition;
 use A17\Twill\Models\Behaviors\Sortable;
 use A17\Twill\Models\Model;
+use A17\Twill\Models\Tag;
+use A17\Twill\Models\Tagged;
+use App\Models\Slugs\PostSlug;
 
 class Post extends Model implements Sortable
 {
@@ -21,7 +24,6 @@ class Post extends Model implements Sortable
         'publish_start_date',
         'author',
         'content',
-        'featured_image',
     ];
     
     public $slugAttributes = [
@@ -30,12 +32,22 @@ class Post extends Model implements Sortable
     
     public $mediasParams = [
         'featured_image' => [
-            'default' => [
+            'thumbnail' => [
                 [
                     'name' => 'default',
-                    'ratio' => 16 / 9,
+                    'ratio' => 4 / 3,
                 ],
             ],
+            'cover' => [
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9
+                ]
+            ]
         ],
+    ];
+
+    protected $casts = [
+        'created_at' => 'date:d M Y',
     ];
 }

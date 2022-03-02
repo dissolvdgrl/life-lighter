@@ -102,3 +102,13 @@ nav {
     background-size: cover;
     background-position: bottom center;
 }
+
+.continue-reading {
+    > span {
+        @apply ml-0 transition-all duration-150;
+    }
+
+    &:hover > span {
+        @apply ml-1;
+    }
+}
