@@ -65,7 +65,7 @@
     </section>
 
     <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
-        <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Want more information on how I can help you</p>
+        <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Want more information on how I can help you?</p>
         <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">Book a “Hello Session” now</p>
         <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Get started</a>
     </section>

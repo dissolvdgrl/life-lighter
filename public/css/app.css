@@ -563,6 +563,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-32 {
   margin-bottom: 8rem;
 }
+.mb-36 {
+  margin-bottom: 9rem;
+}
 .flex {
   display: flex;
 }
@@ -599,12 +602,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-md {
   max-width: 28rem;
 }
+.grow {
+  flex-grow: 1;
+}
 .rotate-45 {
   --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-rotate-45 {
   --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
@@ -716,6 +725,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-36 {
   padding-top: 9rem;
+}
+.pt-24 {
+  padding-top: 6rem;
+}
+.pb-8 {
+  padding-bottom: 2rem;
 }
 .text-center {
   text-align: center;
@@ -1074,6 +1089,10 @@ nav .nav-link:hover::after, nav .nav-link:focus::after {
     grid-column: span 3 / span 3;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1094,6 +1113,10 @@ nav .nav-link:hover::after, nav .nav-link:focus::after {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1108,6 +1131,10 @@ nav .nav-link:hover::after, nav .nav-link:focus::after {
 
   .md\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:py-48 {
