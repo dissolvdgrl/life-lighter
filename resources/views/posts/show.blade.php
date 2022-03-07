@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('page-title', '{{ $post->title }}')
+@section('page-title', $post->title)
 
 @section('header')
     <x-header
@@ -15,7 +15,6 @@
 
 @section('content')
     <section class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">   
-        
         
     </section>
 @endsection

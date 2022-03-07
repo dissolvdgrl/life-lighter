@@ -34,13 +34,13 @@ class Post extends Model implements Sortable
         'featured_image' => [
             'thumbnail' => [
                 [
-                    'name' => 'default',
+                    'name' => 'thumbnail',
                     'ratio' => 4 / 3,
                 ],
             ],
             'cover' => [
                 [
-                    'name' => 'landscape',
+                    'name' => 'cover',
                     'ratio' => 16 / 9
                 ]
             ]

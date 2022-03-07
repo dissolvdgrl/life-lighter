@@ -10,7 +10,7 @@ class PagesController extends Controller
     public function posts() {
 
         $posts = Post::where('published', 1)->get();
-
+        
         return view('posts.index', compact('posts'));
     }
 

@@ -9,6 +9,7 @@
         titleCursive="nourished life"
         action="Book Now"
         actionUrl="#"
+        newtab="_blank"
         image="images/home-header.jpg">      
     </x-header>
 @endsection
