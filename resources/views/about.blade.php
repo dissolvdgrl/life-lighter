@@ -46,7 +46,28 @@
         </div>
     </section>
 
-    {{-- TODO: coloured blocks that flip on hover --}}
+    <section class="relative w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
+        <div class="flip-card">
+            <div class="card-front card-1">
+                <p class="font-cursive uppercase text-center text-white">Read more about</p>
+                <p class="font-sans uppercase text-center tracking-ultrawide text-white">My qualification</p>
+            </div>
+            <div class="card-back">
+                <p class="text-white">I am a registered dietitian RD (SA), a coach and a mentor.</p>  
+                <p class="text-white">I received a Bachelor of Science Degree in Human Nutrition and Dietetics from the University of Stellenbosch.  Further nutrition studies include:</p>
+                <p class="text-white">-  2-year course in Functional Medicine</p>
+                <p class="text-white">- Master’s module in Nutrigenomics and Diabetes</p>
+                <p class="text-white">- Foundational Course in “Treating the Emotional Eater”</p>
+                <p class="text-white">- 3X4 Foundations Course in Nutrigenomics</p>
+                <p class="text-white">I am also a certified NBI Practitioner. I completed my coach training through Profectus, and previously achieved an ACC credential from the International Coach Federation. </p>
+                <p class="text-white">I hold a Diploma in Education, Mentorship and C.A.T. from Ginõskõ: SA Academy for Education and Mentorship in Humanness/ Personhood</p>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
 
     <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
         <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Want more information on how I can help you?</p>
