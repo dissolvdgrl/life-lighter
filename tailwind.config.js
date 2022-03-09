@@ -15,6 +15,9 @@ module.exports = {
       lineHeight: {
         '2': '0.5'
       },
+      height: {
+        '128': '32rem'
+      },
       fontFamily: {
         'sans': ['pt_sansregular'],
         'bold': ['pt_sansbold'],

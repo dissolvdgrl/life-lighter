@@ -47,8 +47,8 @@
     </section>
 
     <section class="relative w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
-        <div class="flip-card">
-            <div class="card-front card-1">
+        <div class="flip-card card-1 lg:col-span-3">
+            <div class="card-front">
                 <p class="font-cursive uppercase text-center text-white">Read more about</p>
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white">My qualification</p>
             </div>
@@ -63,9 +63,35 @@
                 <p class="text-white">I hold a Diploma in Education, Mentorship and C.A.T. from Ginõskõ: SA Academy for Education and Mentorship in Humanness/ Personhood</p>
             </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="flip-card card-2 lg:col-span-2">
+            <div class="card-front">
+                <p class="font-cursive uppercase text-center text-white">Read more about</p>
+                <p class="font-sans uppercase text-center tracking-ultrawide text-white">My experience</p>
+            </div>
+            <div class="card-back">
+                <p class="text-white">I have many years of experience as clinical dietitian working in hospitals and communities (mostly in the UK), and in private practice.  My special interest in nutrition are focused towards weight management, nutrigenomics, digestive health and auto-immune disorders.</p> 
+                <p class="text-white">As coach my specialties include life coaching and health coaching.</p>
+                <p class="text-white">As mentor, my experience and focus is towards Christian women of all ages, who have a desire to grow in their Biblical principles.</p>
+            </div>
+        </div>
+        <div class="flip-card card-3 lg:col-span-1">
+            <div class="card-front">
+                <p class="font-cursive uppercase text-center text-white">Contributing</p>
+                <p class="font-sans uppercase text-center tracking-ultrawide text-white">author</p>
+            </div>
+            <div class="card-back">
+                <p class="text-white">Coming soon!</p> 
+            </div>
+        </div>
+        <div class="flip-card card-4 lg:col-span-3">
+            <div class="card-front">
+                <p class="font-cursive uppercase text-center text-white">Other</p>
+                <p class="font-sans uppercase text-center tracking-ultrawide text-white">Interests</p>
+            </div>
+            <div class="card-back">
+                <p class="text-white">Coming soon!</p> 
+            </div>
+        </div>
         <div></div>
     </section>
 

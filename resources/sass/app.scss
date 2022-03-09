@@ -113,20 +113,66 @@ nav {
     }
 }
 
-.flip-card > div {
-    @apply py-32 relative;
+.flip-card {
+    @apply relative h-128 md:h-80 bg-cover bg-center transition-all duration-500;
+
+    &:hover {
+        @apply bg-blend-multiply bg-opacity-50;
+    }
+    
+    &:hover {
+        .card-front {
+            @apply opacity-0;
+            
+        }
+
+        .card-back {
+            @apply opacity-100;
+        }
+    }
 }
 
 .card-1 {
     background-image: url('/images/qualification-img.jpg');
-    background-size: cover;
-    background-position: center center;
+
+    &:hover {
+        @apply bg-darkBlue;
+    }
+}
+
+.card-2 {
+    background-image: url('/images/experience-img.jpg');
+
+    &:hover {
+        @apply bg-turquoise ;
+    }
+}
+
+.card-3 {
+    background-image: url('/images/contributing-author-img.jpg');
+
+    &:hover {
+        @apply bg-turquoise ;
+    }
+}
+
+.card-4 {
+    background-image: url('/images/other-interests-img.jpg');
+
+    &:hover {
+        @apply bg-pomegranate ;
+    }
 }
 
 .card-front {
+    @apply absolute top-0 z-10 h-full w-full flex flex-col justify-center transition-all duration-500;
     
 }
 
 .card-back {
-    @apply bg-darkBlue;
+    @apply absolute top-0 z-9 h-full w-full p-8 opacity-0 transition-all duration-500;
+
+    p {
+        @apply text-center;
+    }
 }
