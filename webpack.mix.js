@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
+const homedir = require('os').homedir();
+const domain = 'life-lighter.test';
 
 /*
  |--------------------------------------------------------------------------
@@ -20,7 +22,11 @@ mix.js('resources/js/app.js', 'public/js')
         postCss: [ tailwindcss('./tailwind.config.js') ],
     })
     .browserSync({
-        proxy: 'life-lighter.test',
-        host: 'life-lighter.test',
-        open: 'external'
+        proxy: 'https://' + domain,
+        host: domain,
+        open: 'external',
+        https: {
+            key: homedir + "/.config/valet/Certificates/" + domain + ".key",
+            cert: homedir + "/.config/valet/Certificates/" + domain + ".crt"
+        }
     });
