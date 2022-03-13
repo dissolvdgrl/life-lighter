@@ -3,18 +3,18 @@
 @section('page-title', $post->title)
 
 @section('header')
-    <x-header
-        preTitle=""
+    <x-post-header
         title="{{ $post->title }}"
-        titleCursive="{{ $post->description }}"
-        action="Read more"
-        actionUrl="#postsContainer"
-        image="{{ $post->images('featured_image', 'cover')[0] }}">      
-    </x-header>
+        description="{{ $post->description }}"
+        image="{{ $post->images('featured_image', 'cover')[0] }}"
+        postDate="{{ $post->created_at }}"
+        author="{{ $post->author }}"
+        :tags="$post->tags">      
+    </x-post-header>
 @endsection
 
 @section('content')
-    <section class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">   
-        
+    <section id="postContent" class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">   
+        {!! $post->content !!}
     </section>
 @endsection

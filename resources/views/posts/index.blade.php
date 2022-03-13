@@ -16,10 +16,10 @@
 
 @section('content')
     <section id="postsContainer" class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">   
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
             @foreach ($posts as $post)
                 @if ($loop->first)
-                    <div class="col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
+                    <div class="col-span-1 md:col-span-2 xl:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-16 mb-32 mb:mb-16">
                         <img src="{{ $post->images('featured_image', 'thumbnail')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full">
                         <div class="">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
@@ -38,11 +38,11 @@
                                 <a href="blog/{{ $post->slug }}" class="continue-reading">Continue reading <span>></span></a>
                             </p> 
                         </div>
-                    </div>                
+                    </div>
                 @else
-                    <div class="shadow-xl transition-shadow duration-150 hover:shadow-md focus:shadow-md">
+                    <div class="md:col-span-1 flex flex-col max-w-md shadow-xl transition-shadow duration-150 hover:shadow-md focus:shadow-md">
                         <img src="{{ $post->images('featured_image', 'cover')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full">
-                        <div class=" p-4">
+                        <div class="h-full p-4 flex flex-col items-start">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
                             <p class="font-bold text-darkBlue uppercase text-2xl mb-4">{{ $post->title }}</p> 
                             <p class="mb-4">
@@ -54,7 +54,7 @@
                                 @endforeach 
                             </p> 
                             <p class="mb-4">{{ $post->description }}</p>                            
-                            <p class="font-bold text-pomegranate">
+                            <p class="font-bold text-pomegranate mt-auto">
                                 <a href="blog/{{ $post->slug }}" class="continue-reading">Continue reading <span>></span></a>
                             </p> 
                         </div>        

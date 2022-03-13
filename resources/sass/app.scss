@@ -176,3 +176,9 @@ nav {
         @apply text-center;
     }
 }
+
+#postContent {
+    p {
+        @apply mb-4;
+    }
+}
