@@ -16,7 +16,7 @@
             <div class="container max-w-screen-xl mx-auto">
                 <div class="p-4 flex justify-between w-full text-darkBlue relative">
                     <img src="{{ asset('images/Logo.png') }}" alt="Life Lighter" class="w-24 self-center">
-                    <navigation></navigation>                    
+                    <navigation></navigation>
                 </div>
             </div>
         </nav>
@@ -29,12 +29,12 @@
                 <div>
                     <p class="uppercase text-darkBlue font-bold tracking-ultrawide mb-8 text-sm text-center md:text-left">Stay Connected</p>
                     <p class="flex justify-center md:justify-start text-sm text-darkBlue transition-opacity duration-150 hover:opacity-70 text-center md:text-left">
-                        <img src="{{ asset('/images/ig_logo.svg') }}" alt="" class="mr-4"> 
-                        <a href="javascript:void()" >instagram.com/my-profile</a>
+                        <img src="{{ asset('/images/ig_logo.svg') }}" alt="" class="mr-4">
+                        <a href="https://www.instagram.com/life.lighter/" target="_blank">instagram.com/life.lighter</a>
                     </p>
                     <p class="flex justify-center md:justify-start text-sm text-darkBlue transition-opacity duration-150 hover:opacity-70 mt-4 text-center md:text-left">
-                        <img src="{{ asset('/images/fb_logo.svg') }}" alt="" class="mr-4"> 
-                        <a href="javascript:void()" >facebook.com/my-profile</a>
+                        <img src="{{ asset('/images/fb_logo.svg') }}" alt="" class="mr-4">
+                        <a href="https://www.facebook.com/lifelighterliving/" target="_blank">facebook.com/lifelighterliving</a>
                     </p>
                 </div> <!-- col 1 -->
                 <div class="flex flex-col items-center md:items-start">
@@ -49,11 +49,11 @@
                 </div> <!-- col 2 -->
                 <div class="flex flex-col items-center md:items-start">
                     <p class="uppercase text-darkBlue font-bold tracking-ultrawide mb-8 text-sm text-center md:text-left">Office Hours</p>
-                    <p class="flex text-sm text-darkBlue text-center md:text-left">Mondays &#8212</p>
-                    <p class="flex text-sm text-darkBlue text-center md:text-left">Tuesdays &#8212</p>
-                    <p class="flex text-sm text-darkBlue text-center md:text-left">Wednesdays &#8212</p>
-                    <p class="flex text-sm text-darkBlue text-center md:text-left">Thursdays &#8212</p>
-                    <p class="flex text-sm text-darkBlue text-center md:text-left">Fridays &#8212</p>
+                    <p class="flex text-sm text-darkBlue text-center md:text-left">Mondays &#8212 10h00 – 18h00</p>
+                    <p class="flex text-sm text-darkBlue text-center md:text-left">Tuesdays &#8212 08h30 – 14h00</p>
+                    <p class="flex text-sm text-darkBlue text-center md:text-left">Wednesdays &#8212 09h30 – 17h00</p>
+                    <p class="flex text-sm text-darkBlue text-center md:text-left">Thursdays &#8212 09h00 – 18h00</p>
+                    <p class="flex text-sm text-darkBlue text-center md:text-left">Fridays &#8212 09h00 – 15h00</p>
                 </div> <!-- col 3 -->
                 <div class="bg-gray-100 p-8 md:col-span-3">
                     <p class="text-gray-500 tracking-widest text-center">“…but I have come to give you everything in abundance, more than you expect – </p>
@@ -65,7 +65,7 @@
         </footer>
 
     </div>
-    
+
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

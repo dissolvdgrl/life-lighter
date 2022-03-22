@@ -1,4 +1,4 @@
-@props(['preTitle', 'title', 'titleCursive', 'action', 'actionUrl', 'image'])
+@props(['preTitle', 'title', 'titleCursive', 'action', 'actionUrl', 'image', 'newtab'])
 
 <header class="relative pt-36 md:py-48">
     <div class="container lg:max-w-5xl mx-auto p-8 tracking-wide">

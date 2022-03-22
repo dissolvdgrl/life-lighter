@@ -8,9 +8,9 @@
         title="Services"
         titleCursive="personalised for you"
         action="Book Now"
-        actionUrl="#"
+        actionUrl="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare"
         newtab="_blank"
-        image="images/services-header.jpg">      
+        image="images/services-header.jpg">
     </x-header>
 @endsection
 
@@ -24,24 +24,24 @@
 
     <section class="grid md:grid-cols-2 gap-16 w-5/6 lg:w-4/6 mx-auto py-16">
         <div class="flex flex-col justify-start">
-            <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center z-10 md:text-left">Work</p>  
-            <p class="text-pomegranate text-center font-cursive font-bold text-4xl leading-3 z-9 md:text-left">with us</p>          
+            <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center z-10 md:text-left">Work</p>
+            <p class="text-pomegranate text-center font-cursive font-bold text-4xl leading-3 z-9 md:text-left">with us</p>
             <div class="mt-16 flex items-center">
                 <img src="{{ asset('images/office-building.svg') }}" alt="Icon of an office building" class="mr-4">
                 <p class="text-darkBlue w-full text-2xl">In-person at the practice</p>
             </div>
-            <p class="font-cursive uppercase font-bold text-turquoise text-4xl my-8 ml-8">or</p>            
+            <p class="font-cursive uppercase font-bold text-turquoise text-4xl my-8 ml-8">or</p>
             <div class="flex items-center">
                 <img src="{{ asset('images/globe.svg') }}" alt="Icon of a globe" class="mr-4">
                 <p class="text-darkBlue w-full text-2xl">In-person at the practice</p>
-            </div>  
+            </div>
         </div>
         <img src="{{ asset('/images/hand-pencil.jpg') }}" alt="" class="mx-auto mt-16 shadow-2xl">
     </section>
 
     <section class="grid md:grid-cols-2 gap-16 w-5/6 lg:w-4/6 mx-auto py-16">
         <div class="bg-gray-100 grid md:col-span-2 p-8 transition-shadow duration-200 hover:shadow-xl">
-            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Nutrition</p>  
+            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Nutrition</p>
             <p class="text-turquoise uppercase font-sans text-3xl">Consultations</p>
             <div class="flex items-center mt-8">
                 <img src="{{ asset('images/scale.svg') }}" alt="Scale icon" class="mr-4">
@@ -57,7 +57,7 @@
             </div>
         </div>
         <div class="bg-gray-100 grid p-8 transition-shadow duration-200 hover:shadow-xl">
-            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Coaching</p>  
+            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Coaching</p>
             <div class="flex items-center mt-8">
                 <img src="{{ asset('images/health-coach.svg') }}" alt="health coach icon" class="mr-4">
                 <p class="text-darkBlue">Health Coaching</p>
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="bg-gray-100 grid p-8 transition-shadow duration-200 hover:shadow-xl">
-            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Mentoring</p>  
+            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Mentoring</p>
             <div class="flex items-center mt-8">
                 <img src="{{ asset('images/mentoring.svg') }}" alt="Scale icon" class="mr-4">
                 <p class="text-darkBlue"></p>
@@ -79,6 +79,6 @@
     <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
         <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Lose weight. Be healthier. Get a hop and a skip back in your step.</p>
         <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">Book a “Hello Session” now</p>
-        <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Get started</a>
+        <a href="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate" target="_blank">Get started</a>
     </section>
 @endsection

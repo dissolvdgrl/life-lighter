@@ -8,9 +8,9 @@
         title="About"
         titleCursive="our company"
         action="Book Now"
-        actionUrl="#"
+        actionUrl="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare"
         newtab="_blank"
-        image="images/about-header.jpg">      
+        image="images/about-header.jpg">
     </x-header>
 @endsection
 
@@ -53,7 +53,7 @@
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white">My qualification</p>
             </div>
             <div class="card-back">
-                <p class="text-white">I am a registered dietitian RD (SA), a coach and a mentor.</p>  
+                <p class="text-white">I am a registered dietitian RD (SA), a coach and a mentor.</p>
                 <p class="text-white">I received a Bachelor of Science Degree in Human Nutrition and Dietetics from the University of Stellenbosch.  Further nutrition studies include:</p>
                 <p class="text-white">-  2-year course in Functional Medicine</p>
                 <p class="text-white">- Master’s module in Nutrigenomics and Diabetes</p>
@@ -69,7 +69,7 @@
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white">My experience</p>
             </div>
             <div class="card-back">
-                <p class="text-white">I have many years of experience as clinical dietitian working in hospitals and communities (mostly in the UK), and in private practice.  My special interest in nutrition are focused towards weight management, nutrigenomics, digestive health and auto-immune disorders.</p> 
+                <p class="text-white">I have many years of experience as clinical dietitian working in hospitals and communities (mostly in the UK), and in private practice.  My special interest in nutrition are focused towards weight management, nutrigenomics, digestive health and auto-immune disorders.</p>
                 <p class="text-white">As coach my specialties include life coaching and health coaching.</p>
                 <p class="text-white">As mentor, my experience and focus is towards Christian women of all ages, who have a desire to grow in their Biblical principles.</p>
             </div>
@@ -80,7 +80,7 @@
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white">author</p>
             </div>
             <div class="card-back">
-                <p class="text-white">Coming soon!</p> 
+                <p class="text-white">Coming soon!</p>
             </div>
         </div>
         <div class="flip-card card-4 lg:col-span-3">
@@ -89,7 +89,7 @@
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white">Interests</p>
             </div>
             <div class="card-back">
-                <p class="text-white">Coming soon!</p> 
+                <p class="text-white">Coming soon!</p>
             </div>
         </div>
         <div></div>
@@ -98,6 +98,6 @@
     <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
         <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Want more information on how I can help you?</p>
         <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">Book a “Hello Session” now</p>
-        <a href="javascript:void()" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Get started</a>
+        <a href="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate" target="_blank">Get started</a>
     </section>
 @endsection
