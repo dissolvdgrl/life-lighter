@@ -19,6 +19,7 @@ Route::view('/', 'home');
 Route::controller(PagesController::class)->group(function () {
     Route::get('/blog', 'posts')->name('blog');
     Route::get('/blog/{slug}', 'post');
+    Route::get('/tags/{slug}', 'tag');
 });
 
 Route::view('/about', 'about')->name('about');
