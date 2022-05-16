@@ -55,11 +55,7 @@
                     <p class="flex text-sm text-darkBlue text-center md:text-left">Thursdays &#8212 09h00 – 18h00</p>
                     <p class="flex text-sm text-darkBlue text-center md:text-left">Fridays &#8212 09h00 – 15h00</p>
                 </div> <!-- col 3 -->
-                <div class="bg-gray-100 p-8 md:col-span-3">
-                    <p class="text-gray-500 tracking-widest text-center">“…but I have come to give you everything in abundance, more than you expect – </p>
-                    <p class="text-center text-turquoise font-cursive text-2xl uppercase">life in its fullness until you overflow!” </p>
-                    <p class="text-xs font-bold text-darkBlue tracking-ultrawide uppercase text-center mt-4">John 10:10 TPT</p>
-                </div> <!-- col 4 -->
+                @yield('footer-verse')
             </div>
             <p class="text-center text-xs text-gray-400 tracking-widest mt-8">© {{ date('Y')}} Life Lighter  |  <a href="https://chilldsgn.com/" target="_blank">Made by CHD</a></p>
         </footer>

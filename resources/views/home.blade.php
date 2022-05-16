@@ -44,7 +44,7 @@
                 <img src="{{ asset('/images/woman1.jpg') }}" alt="" class="lg:block lg:absolute lg:top-24 lg:left-8 lg:shadow-2xl">
             </div>
             <div class="flex flex-col items-center lg:justify-center">
-                <p class="text-5xl text-white text-center">You’ve come to</p>
+                <p class="text-5xl text-white text-center mb-2">You’ve come to</p>
                 <p class="text-4xl text-pomegranate text-center mb-24 font-cursive">the right place!</p>
                 <a href="https://lifelighter.setmore.com/" class="button text-turquoise border-turquoise hover:bg-turquoise focus:bg-turquiose" target="_blank">BOOK NOW</a>
             </div>
@@ -54,7 +54,7 @@
     <section class="relative py-24 w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 gap-8 lg:mt-16 md:grid-cols-3">
         <div class="md:col-span-2">
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl mb-8">How we can help...</p>
-            <p class="font-sans text-darkBlue mb-8">At Life Lighter we partner with you to get to the root of your health challenges by combining evidence-based, functional nutrition and lifestyle medicine with the insightful, thought provoking and creative process of coaching to inspire you to maximize your well-being and potential.</p>
+            <p class="font-sans text-darkBlue mb-8">At Life Lighter we partner with you to get to the root of your health challenges by combining evidence-based, functional nutrition and lifestyle medicine with the insightful, thought-provoking and creative process of coaching to inspire you to maximize your well-being and potential.</p>
             <p class="font-sans text-darkBlue">This enables you, the client, to gain clarity on the challenges at hand and to move forward with achievable goals and lasting solutions.</p>
         </div>
         <div>
@@ -67,37 +67,45 @@
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">Your gain and what</p>
             <p class="text-turquoise text-center font-cursive leading-3 text-4xl">you can experience</p>
         </div>
-        <div class="bg-turquoise flex flex-col justify-center items-center p-8">
+        <div class="bg-turquoise bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 ">
             <p class="text-white text-center font-cursive text-2xl leading-3">freedom</p>
             <p class="text-white font-sans tracking-ultrawide text-center">in being</p>
+            <img src="{{ asset('/images/1-freedom.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-pomegranate flex flex-col justify-center items-center p-8">
+        <div class="bg-pomegranate bg-blend-multiply bg-opacity-70 relative overflow-hidden flex flex-col justify-center items-center p-8">
             <p class="text-white text-center font-cursive text-2xl leading-3">relief - </p>
             <p class="text-white font-sans tracking-ultrawide text-center">feeling lighter, hopeful</p>
+            <img src="{{ asset('/images/2-relief.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-darkBlue flex flex-col justify-center items-center p-8 md:col-span-2">
+        <div class="bg-darkBlue bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
             <p class="text-white text-center font-cursive text-2xl leading-3">health and wellbeing -</p>
             <p class="text-white text-center font-sans tracking-ultrawide">where you are now, on your way to where you are going</p>
+            <img src="{{ asset('/images/3-health.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-slate-600 flex flex-col justify-center items-center p-8 md:col-span-2">
+        <div class="bg-slate-600 bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
             <p class="text-white text-center font-cursive text-2xl leading-3">practical guidance on</p>
             <p class="text-white font-sans tracking-ultrawide text-center">food intake individualized to your needs and circumstances</p>
+            <img src="{{ asset('/images/4-practical.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-pomegranate flex flex-col justify-center items-center p-8">
+        <div class="bg-pomegranate bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8">
             <p class="text-white text-center font-cursive text-2xl leading-3">confidence in</p>
             <p class="text-white font-sans tracking-ultrawide text-center">reaching your goals</p>
+            <img src="{{ asset('/images/5-confidence.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-turquoise flex flex-col justify-center items-center p-8 md:col-span-3">
+        <div class="bg-turquoise bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-3">
             <p class="text-white text-center font-cursive text-4xl leading-3">greater understanding on how</p>
             <p class="text-white font-sans tracking-ultrawide text-center">your thoughts, will and emotions impact your state of wellbeing</p>
+            <img src="{{ asset('/images/6-greater.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-slate-600 flex flex-col justify-center items-center p-8 md:col-span-2">
+        <div class="bg-slate-600 bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
             <p class="text-white text-center font-cursive text-2xl leading-3">growth in your relationships -</p>
             <p class="text-white font-sans tracking-ultrawide text-center">with self, food and others</p>
+            <img src="{{ asset('/images/7-growth.jpg') }}" alt="" class="absolute -z-10">
         </div>
-        <div class="bg-darkBlue flex flex-col justify-center items-center p-8 md:col-span-2">
+        <div class="bg-darkBlue bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
             <p class="text-white text-center font-cursive text-2xl leading-3">understanding of the</p>
             <p class="text-white font-sans tracking-ultrawide text-center">impact of lifestyle components</p>
+            <img src="{{ asset('/images/8-understanding.jpg') }}" alt="" class="absolute -z-10">
         </div>
     </section>
 
@@ -115,12 +123,12 @@
                 <div class="divider divider-left"></div>
             </div>
             <div class="w-full h-64 bg-slate-200 shadow-2xl">
-                <img src="" alt="foto" class="">
+                <img src="{{ asset('/images/careen.jpg') }}" alt="foto" class="">
             </div>
             <div class="flex flex-col items-center md:col-span-2 md:items-start">
                 <p class="font-bold uppercase text-2xl text-darkBlue">Hi. I am Careen Visagie.</p>
                 <p class="font-sans text-darkBlue text-center mb-6 md:text-left">I am here to help you regain and improve your health and wellbeing by addressing the root causes of your challenges.</p>
-                <p class="font-sans text-darkBlue text-center mb-6 md:text-left">I help you on your journey to live a lighter, nourished life – able to fulfill  your purpose, passions and potential.</p>
+                <p class="font-sans text-darkBlue text-center mb-6 md:text-left">I help you on your journey to live a lighter, nourished life – able to fulfil your purpose, passions, and potential.</p>
                 <a href="/about" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate">Read more</a>
             </div>
         </div>
@@ -132,4 +140,12 @@
         <a href="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate" target="_blank">Get started</a>
     </section>
 
+@endsection
+
+@section('footer-verse')
+    <x-footer-verse
+        text-regular="…but I have come to give you everything in abundance, more than you expect –"
+        text-cursive="life in its fullness until you overflow!”"
+        verse="John 10:10 TPT"
+    ></x-footer-verse>
 @endsection

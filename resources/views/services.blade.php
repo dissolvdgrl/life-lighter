@@ -40,45 +40,57 @@
     </section>
 
     <section class="grid md:grid-cols-2 gap-16 w-5/6 lg:w-4/6 mx-auto py-16">
-        <div class="bg-gray-100 grid md:col-span-2 p-8 transition-shadow duration-200 hover:shadow-xl">
-            <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Nutrition</p>
-            <p class="text-turquoise uppercase font-sans text-3xl">Consultations</p>
+        <div class="bg-gray-100 grid grid-cols-1 md:grid-cols-2 md:col-span-2 p-8 transition-shadow duration-200 hover:shadow-xl">
+            <p class="text-darkBlue uppercase font-sans font-bold text-3xl col-span-2">Nutrition</p>
+            <p class="text-turquoise uppercase font-sans text-3xl col-span-2">Consultations</p>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/scale.svg') }}" alt="Scale icon" class="mr-4">
-                <p class="text-darkBlue">Weight management</p>
+                <img src="{{ asset('images/scale.svg') }}" alt="Scale icon" class="mr-4 w-14">
+                <p class="text-darkBlue">Weight-neutral, food freedom</p>
             </div>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/stomach.svg') }}" alt="Stomach icon" class="mr-4">
-                <p class="text-darkBlue">Digestive Health</p>
+                <img src="{{ asset('images/stomach.svg') }}" alt="Stomach icon" class="mr-4 w-14">
+                <p class="text-darkBlue">Wellness nutrition</p>
             </div>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/virus.svg') }}" alt="Virus icon" class="mr-4">
-                <p class="text-darkBlue">Auto-Immune Disorders</p>
+                <img src="{{ asset('images/virus.svg') }}" alt="Virus icon" class="mr-4 w-14">
+                <p class="text-darkBlue">Nutrition therapy</p>
+            </div>
+            <div class="flex items-center mt-8">
+                <img src="{{ asset('images/other.svg') }}" alt="Virus icon" class="mr-4 w-14">
+                <p class="text-darkBlue">Other</p>
             </div>
         </div>
         <div class="bg-gray-100 grid p-8 transition-shadow duration-200 hover:shadow-xl">
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Coaching</p>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/health-coach.svg') }}" alt="health coach icon" class="mr-4">
+                <img src="{{ asset('images/health-coach.svg') }}" alt="health coach icon" class="mr-4 w-14">
                 <p class="text-darkBlue">Health Coaching</p>
             </div>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/life-coach.svg') }}" alt=" life coach icon" class="mr-4">
+                <img src="{{ asset('images/life-coach.svg') }}" alt=" life coach icon" class="mr-4 w-14">
                 <p class="text-darkBlue">Life Coaching</p>
             </div>
         </div>
         <div class="bg-gray-100 grid p-8 transition-shadow duration-200 hover:shadow-xl">
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl ">Mentoring</p>
             <div class="flex items-center mt-8">
-                <img src="{{ asset('images/mentoring.svg') }}" alt="Scale icon" class="mr-4">
+                <img src="{{ asset('images/mentoring.svg') }}" alt="Scale icon" class="mr-4 w-14">
                 <p class="text-darkBlue"></p>
             </div>
         </div>
     </section>
 
     <section class="relative py-16 w-5/6 mx-auto flex flex-col items-center">
-        <p class="text-turquoise tracking-widest font-sans text-2xl text-center">Lose weight. Be healthier. Get a hop and a skip back in your step.</p>
+        <p class="text-turquoise tracking-widest font-sans text-2xl text-center mb-2">Be healthier. Get a hop and a skip back in your step!</p>
         <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center mb-6">Book a “Hello Session” now</p>
         <a href="https://booking.setmore.com/scheduleappointment/65f8b765-3315-4ad8-b703-9d0987a6ce79/services/s25c21496694829911?source=easyshare" class="button border-pomegranate text-pomegranate hover:bg-pomegranate focus:bg-pomegranate" target="_blank">Get started</a>
     </section>
+@endsection
+
+@section('footer-verse')
+    <x-footer-verse
+        text-regular="Beloved friend, I pray that you are prospering in every way and that you continually enjoy good health,"
+        text-cursive="just as your soul is prospering.”"
+        verse="3 John 1:2  TPT"
+    ></x-footer-verse>
 @endsection

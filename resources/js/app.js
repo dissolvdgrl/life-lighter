@@ -5,6 +5,7 @@ import HeaderClipPath from './components/HeaderClipPath.vue';
 import Navigation from './components/Navigation.vue';
 import MenuToggle from './components/MenuToggle.vue';
 import Email from './components/Email.vue';
+import ContactForm from "./components/ContactForm";
 
 createApp({
     components: {
@@ -12,12 +13,13 @@ createApp({
         MenuToggle,
         Navigation,
         Email,
+        ContactForm
 },
 
     setup() {
         const showMenu = ref(false);
 
-        const toggleMenu = () => {            
+        const toggleMenu = () => {
             showMenu.value = !showMenu.value;
         }
 

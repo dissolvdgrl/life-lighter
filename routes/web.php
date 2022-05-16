@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\FormsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,9 @@ Route::controller(PagesController::class)->group(function () {
 
 Route::view('/about', 'about')->name('about');
 Route::view('/services', 'services')->name('services');
+Route::view('/contact', 'contact')->name('contact');
+
+Route::post('/contact-form', [FormsController::class, 'contact_form']);
+Route::view('/privacy-policy', 'privacy');
+
+Route::view('/test', 'mail.contact');

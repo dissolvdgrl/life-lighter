@@ -6,6 +6,7 @@
             <a href="/about" :class="[setActiveLink('about'), 'nav-link']">About</a>
             <a href="/services" :class="[setActiveLink('services'), 'nav-link']">Services</a>
             <a href="/blog" :class="[setActiveLink('blog'), 'nav-link']">Blog</a>
+            <a href="/contact" :class="[setActiveLink('contact'), 'nav-link']">Contact</a>
             <a href="https://lifelighter.setmore.com/" target="_blank" class="button button-solid bg-pomegranate hover:text-pomegranate  hover:border-pomegranate focus:text-pomegranate focus:border-pomegranate">Book Now</a>
         </div>
     </Transition>

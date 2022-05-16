@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 55 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(0.809286,0,0,0.809286,-9.6181,1.12606)">
+        <circle cx="31.5" cy="29.5" r="4.5" style="fill:none;stroke:rgb(196,196,196);stroke-width:2.47px;"/>
+    </g>
+    <g transform="matrix(5.55556,0,0,5.55556,-146.746,-138.889)">
+        <path d="M31.5,25C33.984,25 36,27.016 36,29.5C36,31.984 33.984,34 31.5,34C29.016,34 27,31.984 27,29.5C27,27.016 29.016,25 31.5,25ZM31.5,25.36C33.785,25.36 35.64,27.215 35.64,29.5C35.64,31.785 33.785,33.64 31.5,33.64C29.215,33.64 27.36,31.785 27.36,29.5C27.36,27.215 29.215,25.36 31.5,25.36Z" style="fill:rgb(196,196,196);"/>
+    </g>
+    <g transform="matrix(0.809286,0,0,0.809286,2.76173,1.12606)">
+        <circle cx="31.5" cy="29.5" r="4.5" style="fill:none;stroke:rgb(196,196,196);stroke-width:2.47px;"/>
+    </g>
+    <g transform="matrix(0.809286,0,0,0.809286,15.1416,1.12606)">
+        <circle cx="31.5" cy="29.5" r="4.5" style="fill:none;stroke:rgb(196,196,196);stroke-width:2.47px;"/>
+    </g>
+</svg>

@@ -24,6 +24,7 @@
                         <div class="">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
                             <p class="font-bold text-darkBlue uppercase text-4xl mb-4">{{ $post->title }}</p>
+                            @if($post->tags)
                             <p class="mb-4">
                                 <span class="uppercase text-darkBlue font-bold mr-3">TAGS:</span>
                                 @foreach ($post->tags as $tag)
@@ -32,6 +33,7 @@
                                     </a>
                                 @endforeach
                             </p>
+                            @endif
                             <p class="mb-4">{{ $post->description }}</p>
 
                             <p class="font-bold text-pomegranate">
@@ -45,6 +47,7 @@
                         <div class="h-full p-4 flex flex-col items-start">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
                             <p class="font-bold text-darkBlue uppercase text-2xl mb-4">{{ $post->title }}</p>
+                            @if(count($post->tags) > 1)
                             <p class="mb-4">
                                 <span class="uppercase text-darkBlue font-bold mr-3">TAGS:</span>
                                 @foreach ($post->tags as $tag)
@@ -53,6 +56,7 @@
                                     </a>
                                 @endforeach
                             </p>
+                            @endif
                             <p class="mb-4">{{ $post->description }}</p>
                             <p class="font-bold text-pomegranate mt-auto">
                                 <a href="blog/{{ $post->slug }}" class="continue-reading">Continue reading <span>></span></a>

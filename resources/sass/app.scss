@@ -11,7 +11,7 @@
         font-weight: normal;
         font-style: normal;
     }
-    
+
     @font-face {
         font-family: 'pt_sansregular';
         src: url('/fonts/ptsans-regular-webfont.woff2') format('woff2'),
@@ -40,8 +40,8 @@ nav {
 
         &:hover::after, &:focus::after {
             @apply h-1 bg-darkBlue;
-        } 
-    }  
+        }
+    }
 }
 
 .header-img {
@@ -71,7 +71,7 @@ nav {
 }
 
 #navToggle {
-    
+
     > div {
         @apply bg-darkBlue rounded-full p-0.5 mb-1 w-8 origin-center transition-all duration-150;
     }
@@ -80,11 +80,11 @@ nav {
 .slide-fade-enter-active {
     transition: all 0.3s ease-out;
 }
-  
+
 .slide-fade-leave-active {
     transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
 }
-  
+
 .slide-fade-enter-from, .slide-fade-leave-to {
     opacity: 0;
 }
@@ -119,29 +119,29 @@ nav {
     &:hover {
         @apply bg-blend-multiply bg-opacity-50;
     }
-    
+
     &:hover {
         .card-front {
-            @apply opacity-0;
-            
+            @apply opacity-0 z-9;
+
         }
 
         .card-back {
-            @apply opacity-100;
+            @apply opacity-100 z-10;
         }
     }
 }
 
 .card-1 {
-    background-image: url('/images/qualification-img.jpg');
+    background-image: url('/images/qualification-img2.jpg');
 
     &:hover {
-        @apply bg-darkBlue;
+        @apply bg-darkBlue bg-opacity-70;
     }
 }
 
 .card-2 {
-    background-image: url('/images/experience-img.jpg');
+    background-image: url('/images/experience-img2.jpg');
 
     &:hover {
         @apply bg-turquoise ;
@@ -149,7 +149,7 @@ nav {
 }
 
 .card-3 {
-    background-image: url('/images/contributing-author-img.jpg');
+    background-image: url('/images/philosophy-img.jpg');
 
     &:hover {
         @apply bg-turquoise ;
@@ -157,7 +157,7 @@ nav {
 }
 
 .card-4 {
-    background-image: url('/images/other-interests-img.jpg');
+    background-image: url('/images/other-interests-img2.jpg');
 
     &:hover {
         @apply bg-pomegranate ;
@@ -166,11 +166,11 @@ nav {
 
 .card-front {
     @apply absolute top-0 z-10 h-full w-full flex flex-col justify-center transition-all duration-500;
-    
+
 }
 
 .card-back {
-    @apply absolute top-0 z-9 h-full w-full p-8 opacity-0 transition-all duration-500;
+    @apply absolute top-0 z-9 h-full w-full flex flex-col justify-center p-8 opacity-0 transition-all duration-500;
 
     p {
         @apply text-center;
@@ -179,6 +179,6 @@ nav {
 
 #postContent {
     p {
-        @apply mb-4;
+        @apply mb-8 text-xl leading-8;
     }
 }
