@@ -9,8 +9,7 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     public function posts() {
-
-        $posts = Post::where('published', 1)->get();
+        $posts = Post::where('published', 1)->orderBy('created_at', 'desc')->get();
         return view('posts.index', compact('posts'));
     }
 

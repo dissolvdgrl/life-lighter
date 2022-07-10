@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         'sans': ['pt_sansregular'],
         'bold': ['pt_sansbold'],
-        'cursive': ['shorelines_script_boldregular', 'cursive']
+        'cursive': ['Oooh Baby', 'cursive']
       },
       colors: {
         darkBlue: '#01202C',

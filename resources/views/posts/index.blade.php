@@ -6,7 +6,7 @@
     <x-header
         preTitle=""
         title="Blog"
-        titleCursive="all about heath"
+        titleCursive="all about health"
         action="Read more"
         actionUrl="#postsContainer"
         newtab=""
@@ -15,7 +15,7 @@
 @endsection
 
 @section('content')
-    <section id="postsContainer" class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">
+    <section id="postsContainer" class="relative pb-16 w-5/6 lg:w-4/6 mx-auto lg:mt-24">
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
             @foreach ($posts as $post)
                 @if ($loop->first)
@@ -23,8 +23,8 @@
                         <img src="{{ $post->images('featured_image', 'thumbnail')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full">
                         <div class="">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
-                            <p class="font-bold text-darkBlue uppercase text-4xl mb-4">{{ $post->title }}</p>
-                            @if($post->tags)
+                            <p class="font-bold text-darkBlue uppercase text-4xl mb-4"><a href="blog/{{ $post->slug }}" class="transition-opacity duration-200 hover:opacity-75"> {{ $post->title }}</a></p>
+                            @if(count($post->tags) > 0)
                             <p class="mb-4">
                                 <span class="uppercase text-darkBlue font-bold mr-3">TAGS:</span>
                                 @foreach ($post->tags as $tag)
@@ -46,8 +46,8 @@
                         <img src="{{ $post->images('featured_image', 'cover')[0] }}" alt="{{ $post->title }} featured image" class="max-w-md w-full">
                         <div class="h-full p-4 flex flex-col items-start">
                             <p class="tex-sm text-gray-300 mb-2">{{ date('d F Y', strToTime($post->created_at)) }} - {{ $post->author }}</p>
-                            <p class="font-bold text-darkBlue uppercase text-2xl mb-4">{{ $post->title }}</p>
-                            @if(count($post->tags) > 1)
+                            <p class="font-bold text-darkBlue uppercase text-2xl mb-4"><a href="{{ $post->slug }}" class="transition-opacity duration-200 hover:opacity-75"> {{ $post->title }}</a></p>
+                            @if(count($post->tags) > 0)
                             <p class="mb-4">
                                 <span class="uppercase text-darkBlue font-bold mr-3">TAGS:</span>
                                 @foreach ($post->tags as $tag)

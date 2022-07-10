@@ -5,9 +5,8 @@
 @section('header')
     <header class="relative pt-36 md:pt-48 md:pb-8">
         <div class="container lg:max-w-5xl mx-auto p-8 tracking-wide">
-            <p class="font-sans text-gray-400 md:text-xl">Insert Text</p>
             <h1 class="font-bold text-6xl text-darkBlue tracking-wide">Contact me</h1>
-            <h2 class="text-4xl italic lg:leading-3 text-turquoise font-cursive font-bold md:leading-2">Insert text</h2>
+            <h2 class="text-6xl lg:leading-3 text-turquoise font-cursive font-bold md:leading-2">I’d like to hear from you!</h2>
             <a href="https://lifelighter.setmore.com/" class="button border-pomegranate text-pomegranate mt-8 hover:bg-pomegranate" target="_blank">Book now</a>
         </div>
     </header>

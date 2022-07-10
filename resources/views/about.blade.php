@@ -15,7 +15,7 @@
 @endsection
 
 @section('content')
-    <section class="relative py-24 w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 gap-8 lg:mt-16 md:grid-cols-3">
+    <section class="relative pb-24 w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 gap-8 lg:mt-16 md:grid-cols-3">
         <div class="md:col-span-2">
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl mb-8">The Life Lighter mission is to help people, especially women, to be healthier</p>
             <p class="font-sans text-darkBlue mb-8">– not just in the physical, but also in soul (thoughts, emotions and will), and in spirit; and to grow and improve in their relationships with themselves, food and others.</p>
@@ -39,7 +39,7 @@
         </div>
         <div>
             <p class="text-darkBlue uppercase font-sans font-bold text-4xl text-center md:text-left">Careen's</p>
-            <p class="text-turquoise text-center font-cursive leading-3 text-4xl uppercase md:text-left mb-16">story</p>
+            <p class="text-turquoise text-center font-cursive leading-3 font-bold text-6xl md:text-left mb-16">story</p>
             <p class="text-darkBlue uppercase font-sans font-bold text-2xl mb-8 text-center md:text-left">Hi. I am Careen Visagie.</p>
             <p class="font-sans text-darkBlue mb-8 text-center md:text-left">I have so much empathy and understanding with people who struggle with their health and are unhappy with their body weight or uncomfortable in themselves.  It can be overwhelming, but these challenges do not have to consume your days.</p>
             <p class="font-sans text-darkBlue mb-8 text-center md:text-left">There is hope! </p>
@@ -50,7 +50,7 @@
     <section class="relative w-5/6 lg:w-4/6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16">
         <div class="flip-card card-1 lg:col-span-3">
             <div class="card-front">
-                <p class="font-cursive uppercase text-center text-white text-2xl">Read more about</p>
+                <p class="font-cursive text-center text-white text-4xl">Read more about</p>
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white text-2xl">My qualification</p>
             </div>
             <div class="card-back">
@@ -63,7 +63,7 @@
         </div>
         <div class="flip-card card-2 lg:col-span-2">
             <div class="card-front">
-                <p class="font-cursive uppercase text-center text-white text-2xl">Read more about</p>
+                <p class="font-cursive text-center text-white text-4xl">Read more about</p>
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white text-2xl">My experience</p>
             </div>
             <div class="card-back">
@@ -75,17 +75,17 @@
         </div>
         <div class="flip-card card-3 lg:col-span-1">
             <div class="card-front">
-                <p class="font-cursive uppercase text-center text-white text-2xl">Read more about</p>
+                <p class="font-cursive text-center text-white text-4xl">Read more about</p>
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white text-2xl">My Philosophy</p>
             </div>
             <div class="card-back">
                 <p class="text-white">
-                    <a href="/blog/about-careen-visagie" class="font-bold cursor-pointer">Read about my philosophy <strong>here</strong></a></p>
+                    <a href="/blog/my-philosophy" class="font-bold cursor-pointer">Read about my philosophy <strong>here</strong></a></p>
             </div>
         </div>
         <div class="flip-card card-4 lg:col-span-3">
             <div class="card-front">
-                <p class="font-cursive uppercase text-center text-white text-2xl">Other</p>
+                <p class="font-cursive text-center text-white text-4xl">Other</p>
                 <p class="font-sans uppercase text-center tracking-ultrawide text-white text-2xl">Interests</p>
             </div>
             <div class="card-back">

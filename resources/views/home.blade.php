@@ -15,18 +15,18 @@
 @endsection
 
 @section('content')
-    <section class="relative py-32 w-5/6 lg:w-4/6 mx-auto lg:mt-44">
+    <section class="relative pb-24 w-5/6 lg:w-4/6 mx-auto lg:mt-16 overflow-visible">
         <p class="text-turquoise tracking-ultrawide font-sans text-3xl text-center">Thrive with our combination of</p>
         <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">functional nutrition, coaching and mentoring.</p>
         <div class="divider"></div>
-        <img src="{{ asset('images/plant_1.svg') }}" alt="" class="absolute left-0 right-0 -z-10 top-12 opacity-20 m-auto">
+        <img src="{{ asset('images/plant_1.svg') }}" alt="" class="absolute left-0 right-0 -z-10 -top-8 opacity-20 m-auto">
     </section>
 
     <section class="vetplant-bg">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-32 w-5/6 lg:w-4/6 mx-auto">
             <div class="mb-6">
                 <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">DO ANY OF THESE STATEMENTS</p>
-                <p class="text-pomegranate text-5xl text-center font-cursive leading-3">apply to you?</p>
+                <p class="text-6xl text-pomegranate font-bold text-center mb-24 font-cursive">apply to you?</p>
             </div>
             <div class="relative">
                 <ul class="text-center lg:text-left">
@@ -45,7 +45,7 @@
             </div>
             <div class="flex flex-col items-center lg:justify-center">
                 <p class="text-5xl text-white text-center mb-2">You’ve come to</p>
-                <p class="text-4xl text-pomegranate text-center mb-24 font-cursive">the right place!</p>
+                <p class="text-6xl text-pomegranate text-center mb-24 font-cursive">the right place!</p>
                 <a href="https://lifelighter.setmore.com/" class="button text-turquoise border-turquoise hover:bg-turquoise focus:bg-turquiose" target="_blank">BOOK NOW</a>
             </div>
         </div>
@@ -65,45 +65,45 @@
     <section class="grid grid-cols-1 gap-8 w-5/6 lg:w-4/6 mx-auto md:grid-cols-4">
         <div class="md:col-span-2">
             <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center">Your gain and what</p>
-            <p class="text-turquoise text-center font-cursive leading-3 text-4xl">you can experience</p>
+            <p class="text-turquoise text-center font-cursive text-6xl font-bold">you can experience</p>
         </div>
         <div class="bg-turquoise bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 ">
-            <p class="text-white text-center font-cursive text-2xl leading-3">freedom</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">freedom</p>
             <p class="text-white font-sans tracking-ultrawide text-center">in being</p>
             <img src="{{ asset('/images/1-freedom.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-pomegranate bg-blend-multiply bg-opacity-70 relative overflow-hidden flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center font-cursive text-2xl leading-3">relief - </p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">relief - </p>
             <p class="text-white font-sans tracking-ultrawide text-center">feeling lighter, hopeful</p>
             <img src="{{ asset('/images/2-relief.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-darkBlue bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
-            <p class="text-white text-center font-cursive text-2xl leading-3">health and wellbeing -</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">health and wellbeing -</p>
             <p class="text-white text-center font-sans tracking-ultrawide">where you are now, on your way to where you are going</p>
             <img src="{{ asset('/images/3-health.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-slate-600 bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
-            <p class="text-white text-center font-cursive text-2xl leading-3">practical guidance on</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">practical guidance on</p>
             <p class="text-white font-sans tracking-ultrawide text-center">food intake individualized to your needs and circumstances</p>
             <img src="{{ asset('/images/4-practical.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-pomegranate bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8">
-            <p class="text-white text-center font-cursive text-2xl leading-3">confidence in</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">confidence in</p>
             <p class="text-white font-sans tracking-ultrawide text-center">reaching your goals</p>
             <img src="{{ asset('/images/5-confidence.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-turquoise bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-3">
-            <p class="text-white text-center font-cursive text-4xl leading-3">greater understanding on how</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">greater understanding on how</p>
             <p class="text-white font-sans tracking-ultrawide text-center">your thoughts, will and emotions impact your state of wellbeing</p>
             <img src="{{ asset('/images/6-greater.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-slate-600 bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
-            <p class="text-white text-center font-cursive text-2xl leading-3">growth in your relationships -</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">growth in your relationships -</p>
             <p class="text-white font-sans tracking-ultrawide text-center">with self, food and others</p>
             <img src="{{ asset('/images/7-growth.jpg') }}" alt="" class="absolute -z-10">
         </div>
         <div class="bg-darkBlue bg-blend-multiply bg-opacity-80 relative overflow-hidden flex flex-col justify-center items-center p-8 md:col-span-2">
-            <p class="text-white text-center font-cursive text-2xl leading-3">understanding of the</p>
+            <p class="text-white text-center font-cursive text-3xl leading-3">understanding of the</p>
             <p class="text-white font-sans tracking-ultrawide text-center">impact of lifestyle components</p>
             <img src="{{ asset('/images/8-understanding.jpg') }}" alt="" class="absolute -z-10">
         </div>
@@ -118,7 +118,7 @@
     <section class="about-me py-16">
         <div class="container mx-auto w-5/6 lg:w-4/6 grid grid-cols-1 md:grid-cols-3 gap-16">
             <div class="flex flex-col justify-start md:col-span-3 lg:col-span-4">
-                <p class="text-turquoise text-center font-cursive text-4xl leading-3 md:text-left">meet</p>
+                <p class="text-turquoise text-center font-cursive text-5xl font-bold leading-3 md:text-left">meet</p>
                 <p class="text-darkBlue uppercase font-sans font-bold text-3xl text-center md:text-left">Careen</p>
                 <div class="divider divider-left"></div>
             </div>

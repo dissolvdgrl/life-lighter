@@ -47,6 +47,7 @@
         ["direction" => "rtl"],
         'link',
         "clean",
+        "image",
         ],
         'placeholder' => 'Post content goes here',
         'editSource' => false,
@@ -56,5 +57,5 @@
         'name' => 'featured_image',
         'label' => 'Featured Image'
     ])
-    
+
 @stop

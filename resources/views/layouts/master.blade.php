@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="Life coaching, wellness coaching">
     <meta name="description" content="Life and wellness coaching in Pretoria, South Africa">
-    <title>@yield('page-title') - {{ config('app.name') }} </title>
+    <title>@yield('page-title') - {{ config('app.name') }} by Careen Visagie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -15,7 +19,7 @@
         <nav id="nav" class="w-full mx-auto flex justify-between bg-white bg-opacity-90 fixed top-0 z-30">
             <div class="container max-w-screen-xl mx-auto">
                 <div class="p-4 flex justify-between w-full text-darkBlue relative">
-                    <img src="{{ asset('images/Logo.png') }}" alt="Life Lighter" class="w-24 self-center">
+                    <a href="/"><img src="{{ asset('images/Logo.png') }}" alt="Life Lighter" class="w-24 self-center"></a>
                     <navigation></navigation>
                 </div>
             </div>
@@ -57,7 +61,7 @@
                 </div> <!-- col 3 -->
                 @yield('footer-verse')
             </div>
-            <p class="text-center text-xs text-gray-400 tracking-widest mt-8">© {{ date('Y')}} Life Lighter  |  <a href="https://chilldsgn.com/" target="_blank">Made by CHD</a></p>
+            <p class="text-center text-xs text-gray-400 tracking-widest mt-8">© {{ date('Y')}} Life Lighter  |  <a href="https://chilldsgn.com/" target="_blank">Made by CHD</a>  |  <a href="https://www.freeprivacypolicy.com/live/904ddebc-37c7-415b-aa76-814c78971776" target="_blank">Privacy Policy</a> </p>
         </footer>
 
     </div>
