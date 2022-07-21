@@ -26,9 +26,10 @@ return [
         'local_path' => env('MEDIA_LIBRARY_LOCAL_PATH', '/'),
         'image_service' => env('MEDIA_LIBRARY_IMAGE_SERVICE', 'A17\Twill\Services\MediaLibrary\Glide'),
         'filesize_limit' => env('FILE_LIBRARY_FILESIZE_LIMIT', 8),
-        'allowed_extenstions' => ['jpg', 'jpeg', 'png'], 
-        'init_alt_text_from_filename' => true,       
+        'allowed_extenstions' => ['jpg', 'jpeg', 'png'],
+        'init_alt_text_from_filename' => true,
     ],
+    'auth_login_redirect_path' => '/admin',
 ];
 
 // what is buckets?
